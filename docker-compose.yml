@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend
+  api:
+    build: .
+    container_name: vda-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+    networks:
+      - vda-network
+
+  # Gradio Frontend
+  ui:
+    build: .
+    container_name: vda-ui
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python src/ui/gradio_app.py
+    restart: unless-stopped
+    networks:
+      - vda-network
+    depends_on:
+      - api
+
+networks:
+  vda-network:
+    driver: bridge
