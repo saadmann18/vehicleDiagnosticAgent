@@ -1,4 +1,4 @@
-# 🚗 Vehicle Diagnostics Agent
+# Vehicle Diagnostics Agent
 
 A production-ready multi-agent AI system for predictive vehicle diagnostics using LangChain, LangGraph, and PyTorch.
 
@@ -7,22 +7,22 @@ A production-ready multi-agent AI system for predictive vehicle diagnostics usin
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## 🎯 Overview
+## Overview
 
 This system employs a sophisticated multi-agent architecture to analyze vehicle sensor data, detect anomalies, identify root causes, and provide actionable maintenance recommendations. It demonstrates production-grade ML pipeline development with agentic AI orchestration.
 
 ### Key Features
 
-- ✅ **Real-time Anomaly Detection** - LSTM-based neural network for pattern recognition
-- ✅ **Root Cause Analysis** - Rule-based and ML-driven fault identification
-- ✅ **Maintenance Recommendations** - Actionable steps with cost estimates
-- ✅ **Multi-Agent Orchestration** - LangGraph-powered workflow coordination
-- ✅ **REST API** - FastAPI backend for programmatic access
-- ✅ **Interactive UI** - Gradio-based dashboard for easy visualization
-- ✅ **Comprehensive Reports** - Natural language summaries and detailed diagnostics
-- ✅ **Docker Support** - Containerized deployment ready
+- **Real-time Anomaly Detection** - LSTM-based neural network for pattern recognition
+- **Root Cause Analysis** - Rule-based and ML-driven fault identification
+- **Maintenance Recommendations** - Actionable steps with cost estimates
+- **Multi-Agent Orchestration** - LangGraph-powered workflow coordination
+- **REST API** - FastAPI backend for programmatic access
+- **Interactive UI** - Gradio-based dashboard for easy visualization
+- **Comprehensive Reports** - Natural language summaries and detailed diagnostics
+- **Docker Support** - Containerized deployment ready
 
-## 🏗️ Architecture
+## Architecture
 
 ### Multi-Agent System
 
@@ -58,7 +58,7 @@ This system employs a sophisticated multi-agent architecture to analyze vehicle 
 - **Visualization:** Plotly, Matplotlib, Seaborn
 - **Deployment:** Docker & Docker Compose
 
-## 📊 Dataset
+## Dataset
 
 The system analyzes vehicle sensor data including:
 
@@ -77,7 +77,7 @@ The system analyzes vehicle sensor data including:
 - ~30% anomaly rate
 - 14 sensor measurements per timestep
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -152,7 +152,7 @@ Run the test suite:
 pytest tests/ -v
 ```
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Python API
 
@@ -189,7 +189,7 @@ curl -X POST http://localhost:8000/diagnose \
 curl http://localhost:8000/report/32
 ```
 
-## 🧪 Project Structure
+## Project Structure
 
 ```
 VehicleDiagnosticsAgent/
@@ -224,7 +224,7 @@ VehicleDiagnosticsAgent/
 └── project.md                  # Project specification
 ```
 
-## 🔬 Model Performance
+## Model Performance
 
 ### Anomaly Detection Model (LSTM)
 
@@ -247,20 +247,20 @@ VehicleDiagnosticsAgent/
 
 **Total Pipeline:** ~1 second per vehicle
 
-## 🎓 Key Learnings & Skills Demonstrated
+## Key Learnings & Skills Demonstrated
 
-- ✅ Multi-agent AI system design and orchestration
-- ✅ Production-grade ML pipeline development
-- ✅ Time-series anomaly detection with deep learning
-- ✅ LangChain/LangGraph for agent coordination
-- ✅ FastAPI backend development
-- ✅ Interactive UI with Gradio
-- ✅ Docker containerization
-- ✅ Data engineering and preprocessing
-- ✅ Domain knowledge integration (automotive diagnostics)
-- ✅ Testing and validation strategies
+- Multi-agent AI system design and orchestration
+- Production-grade ML pipeline development
+- Time-series anomaly detection with deep learning
+- LangChain/LangGraph for agent coordination
+- FastAPI backend development
+- Interactive UI with Gradio
+- Docker containerization
+- Data engineering and preprocessing
+- Domain knowledge integration (automotive diagnostics)
+- Testing and validation strategies
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -279,7 +279,7 @@ UI_PORT=7860
 MODEL_PATH=src/models/best_anomaly_detector.pth
 ```
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 - [ ] Real-time streaming data support
 - [ ] Integration with actual OBD-II devices
@@ -292,7 +292,7 @@ MODEL_PATH=src/models/best_anomaly_detector.pth
 - [ ] LLM integration for natural language queries
 - [ ] Historical trend analysis
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -302,25 +302,25 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
+## Authors
 
 - **Vehicle Diagnostics Team** - Initial work
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - NASA Prognostics Center for dataset inspiration
 - LangChain team for agent orchestration framework
 - PyTorch team for deep learning framework
 - FastAPI and Gradio teams for excellent frameworks
 
-## 📞 Contact
+## Contact
 
 For questions or support, please open an issue on GitHub.
 
 ---
 
-**Built with ❤️ for the automotive and AI community**
+**Built for the automotive and AI community**
